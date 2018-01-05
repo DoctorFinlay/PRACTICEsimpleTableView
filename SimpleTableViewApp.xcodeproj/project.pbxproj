@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		00A039961FFF83AA0023C29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039951FFF83AA0023C29B /* AppDelegate.swift */; };
-		00A039981FFF83AA0023C29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039971FFF83AA0023C29B /* ViewController.swift */; };
+		00A039981FFF83AA0023C29B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039971FFF83AA0023C29B /* MainVC.swift */; };
 		00A0399B1FFF83AA0023C29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A039991FFF83AA0023C29B /* Main.storyboard */; };
 		00A0399D1FFF83AA0023C29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A0399C1FFF83AA0023C29B /* Assets.xcassets */; };
 		00A039A01FFF83AA0023C29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A0399E1FFF83AA0023C29B /* LaunchScreen.storyboard */; };
+		00A039AB1FFF83F80023C29B /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039AA1FFF83F80023C29B /* TableVC.swift */; };
+		00A039AD1FFF84C10023C29B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039AC1FFF84C10023C29B /* CustomCell.swift */; };
+		00A039AF1FFF85180023C29B /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039AE1FFF85180023C29B /* Guitar.swift */; };
+		00A039B11FFF85230023C29B /* GuitarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A039B01FFF85230023C29B /* GuitarList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00A039921FFF83AA0023C29B /* SimpleTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A039951FFF83AA0023C29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00A039971FFF83AA0023C29B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00A039971FFF83AA0023C29B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		00A0399A1FFF83AA0023C29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A0399C1FFF83AA0023C29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A0399F1FFF83AA0023C29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A039A11FFF83AA0023C29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A039AA1FFF83F80023C29B /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
+		00A039AC1FFF84C10023C29B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		00A039AE1FFF85180023C29B /* Guitar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
+		00A039B01FFF85230023C29B /* GuitarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		00A039941FFF83AA0023C29B /* SimpleTableViewApp */ = {
 			isa = PBXGroup;
 			children = (
+				00A039A91FFF83E00023C29B /* Model */,
+				00A039A81FFF83DA0023C29B /* View */,
+				00A039A71FFF83D30023C29B /* Controller */,
 				00A039951FFF83AA0023C29B /* AppDelegate.swift */,
-				00A039971FFF83AA0023C29B /* ViewController.swift */,
+				00A039971FFF83AA0023C29B /* MainVC.swift */,
 				00A039991FFF83AA0023C29B /* Main.storyboard */,
 				00A0399C1FFF83AA0023C29B /* Assets.xcassets */,
 				00A0399E1FFF83AA0023C29B /* LaunchScreen.storyboard */,
 				00A039A11FFF83AA0023C29B /* Info.plist */,
 			);
 			path = SimpleTableViewApp;
+			sourceTree = "<group>";
+		};
+		00A039A71FFF83D30023C29B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00A039AA1FFF83F80023C29B /* TableVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00A039A81FFF83DA0023C29B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00A039AC1FFF84C10023C29B /* CustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00A039A91FFF83E00023C29B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00A039AE1FFF85180023C29B /* Guitar.swift */,
+				00A039B01FFF85230023C29B /* GuitarList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A039981FFF83AA0023C29B /* ViewController.swift in Sources */,
+				00A039AB1FFF83F80023C29B /* TableVC.swift in Sources */,
+				00A039981FFF83AA0023C29B /* MainVC.swift in Sources */,
+				00A039AD1FFF84C10023C29B /* CustomCell.swift in Sources */,
+				00A039B11FFF85230023C29B /* GuitarList.swift in Sources */,
+				00A039AF1FFF85180023C29B /* Guitar.swift in Sources */,
 				00A039961FFF83AA0023C29B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
